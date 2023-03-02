@@ -1,0 +1,66 @@
+body {
+	background-color: black;
+	color: white;
+}
+.page {
+
+}
+.header {
+	display: flex;
+	align-items: flex-start;	
+	justify-content: center;
+
+	font-weight: 900;
+	font-size: 8rem;
+	margin-bottom: 5rem;
+	color: yellow;
+	background-color: purple;
+}
+.content {
+
+}
+.content .row {
+ 	display: flex;
+ 	align-items: center;
+}
+img {
+	display: flex;
+	width: 50%;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+ 	max-height: 100vh;	
+ 	border-radius: 15rem;
+}
+.row:nth-of-type(1) {
+	justify-content: flex-start;
+}
+.row:nth-of-type(2) {
+	justify-content: flex-end;
+	gap: 10rem;
+}
+.row:nth-of-type(3) {
+	justify-content: center;
+}
+.mold {
+	display: flex;
+	row-gap: 10vh;
+	box-shadow: 1rem 1rem 2rem darkcyan;
+}
+.row .stanza {
+	font-size: 1.5rem;
+	padding: 4rem;
+}
+.row > .stanza {
+	line-height: 150%;
+	color: lawngreen;
+}
+.mold + .stanza {
+	font-size: 2rem;
+	color: hotpink;
+	outline-style: dotted;
+	outline-color: white;
+	outline-width: 1rem;
+}
+.row + .mold {
+	margin: 5rem;
+}
